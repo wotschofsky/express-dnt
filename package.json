@@ -1,0 +1,10 @@
+{
+  "name": "express-dnt",
+  "description": "A simple middleware that adds a convenience property for the users Do-Not-Track preference",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.4"
+  }
+}
