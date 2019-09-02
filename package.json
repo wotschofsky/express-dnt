@@ -5,15 +5,15 @@
    "author": "Felix Wotschofsky <hello@felisk.io>",
    "main": "index.js",
    "license": "MIT",
-   "devDependencies": {
-      "express": "^4.16.4"
-   },
+   "devDependencies": {},
    "repository": {
       "type": "git",
       "url": "git+https://github.com/feliskio/express-dnt.git"
    },
    "keywords": [
-      "shadows"
+      "express",
+      "do-not-track",
+      "dnt"
    ],
    "bugs": {
       "url": "https://github.com/feliskio/express-dnt/issues"

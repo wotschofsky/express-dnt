@@ -9,7 +9,7 @@
 
 function expressDnt(alias = 'dnt') {
    return function expressDntMiddleware(req, res, next) {
-      req[alias] = req.headers.DNT && req.headers.DNT.charAt(0) === '1'
+      req[alias] = !!(req.headers.dnt && req.headers.dnt.charAt(0) === '1')
       next()
    }
 }
