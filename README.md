@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/express-dnt)](https://www.npmjs.com/package/express-dnt)
+
 # express-dnt
 
 A simple middleware that adds a convenience property for the users Do-Not-Track preference.
