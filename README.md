@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/express-dnt)](https://www.npmjs.com/package/express-dnt)
+[![npm](https://img.shields.io/npm/v/express-dnt?style=flat-square)](https://www.npmjs.com/package/express-dnt)
 
 # express-dnt
 
