@@ -3,7 +3,8 @@
     "after:bump": "npm run build"
   },
   "git": {
-    "tagName": "v${version}"
+    "tagName": "v${version}",
+    "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...\"${to}\""
   },
   "github": {
     "release": true
