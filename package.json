@@ -1,22 +1,46 @@
 {
-   "name": "express-dnt",
-   "description": "A simple middleware that adds a convenience property for the users Do-Not-Track preference",
-   "version": "1.0.2",
-   "author": "Felix Wotschofsky <hello@felisk.io>",
-   "main": "index.js",
-   "license": "MIT",
-   "devDependencies": {},
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/feliskio/express-dnt.git"
-   },
-   "keywords": [
-      "express",
-      "do-not-track",
-      "dnt"
-   ],
-   "bugs": {
-      "url": "https://github.com/feliskio/express-dnt/issues"
-   },
-   "homepage": "https://github.com/feliskio/express-dnt#readme"
+  "name": "express-dnt",
+  "description": "A simple middleware that adds a convenience property for the users Do-Not-Track preference",
+  "version": "1.0.2",
+  "author": "Felix Wotschofsky <hello@felisk.io>",
+  "license": "MIT",
+  "main": "dist/main/index.js",
+  "types": "dist/main/index.d.ts",
+  "module": "dist/module/index.js",
+  "files": [
+    "dist/",
+    "!**/*.tsbuildinfo",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feliskio/express-dnt.git"
+  },
+  "homepage": "https://github.com/feliskio/express-dnt#readme",
+  "bugs": {
+    "url": "https://github.com/feliskio/express-dnt/issues"
+  },
+  "keywords": [
+    "express",
+    "do-not-track",
+    "dnt"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist/",
+    "build": "run-p build:*",
+    "build:main": "tsc -p tsconfig.json",
+    "build:module": "tsc -p tsconfig.module.json",
+    "predev": "rm -rf dist/",
+    "dev": "run-p dev:*",
+    "dev:main": "tsc -p tsconfig.json -w",
+    "dev:module": "tsc -p tsconfig.module.json -w",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "npm-run-all": "^4.1.5",
+    "release-it": "^14.11.8",
+    "typescript": "^4.5.3"
+  }
 }
